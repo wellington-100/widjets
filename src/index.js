@@ -1,8 +1,20 @@
 
 import ReactDOM from 'react-dom/client';
-import App from './App';
+import { Carousel } from './carousel/Carousel';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />); // <----- JSX syntax
+
+const slidesData = [
+    { 
+        title: 'We have a warm winter!',
+        image: '/images/slide-1.jpg'
+    },
+    {
+        title: 'And a very hot summer!',
+        image: '/images/slide-2.jpg'
+    }
+
+]
+root.render(< Carousel data={slidesData} initialSlideIdx={0}/>); 
 

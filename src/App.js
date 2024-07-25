@@ -1,13 +1,12 @@
-import Title from "./Title";
-import Description from "./Description";
-import Logo from "./Logo";
+import Post from "./Post";
 
 const App = () => {
   return (
     <div>
-      <Title />
-      <Logo />
-      <Description />
+        <Post title="This is the article title"/>
+        <Post body="This is the another article body"/>
+        <Post title="This is the title of the third post" body="This is the body of the third post "/>
+
     </div>
   );
 }
